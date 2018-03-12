@@ -1,0 +1,27 @@
+{
+  "name": "telegram-music-bot",
+  "version": "1.0.0",
+  "description": "shir-yommi",
+  "main": "server.js",
+  "dependencies": {
+    "google-auth-library": "^1.3.1",
+    "googleapis": "^27.0.0",
+    "g": "^2.0.1",
+    "node-telegram-bot-api": "^0.30.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shmulikmak/telegram-bot-shir-yommi.git"
+  },
+  "author": "shmulik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shmulikmak/telegram-bot-shir-yommi/issues"
+  },
+  "homepage": "https://github.com/shmulikmak/telegram-bot-shir-yommi#readme"
+}
