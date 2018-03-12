@@ -51,10 +51,6 @@ bot.on('message', (msg) => {
         });
     }
 
-
-    // console.log(msg.text);
-
-
     const bye = "bye";
     if (msg.text.toString().toLowerCase().includes(bye)) {
         bot.sendMessage(msg.chat.id, "Hope to see you around again , Bye");
