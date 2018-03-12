@@ -8,7 +8,7 @@ const ACCESS_TOKEN = 'AIzaSyCV8dE5xU8w0T8F6LxBB78n_BaTUfrUyRE'; // google api to
 * start message
 */
 const shirYommi = 'תזמון שיר יומי';
-const randomShir = 'שמיעת שיר אקראי';
+const randomShir = 'שיר אקראי';
 bot.onText(/\/start/, (msg) => {
 
     const welcome = `
