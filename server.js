@@ -41,11 +41,7 @@ bot.on('message', (msg) => {
         request.get('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLsg8dI-9laDnMNkNoFWt_Jy9_KpZcW_kt&key=' + ACCESS_TOKEN, (err, header, body) => {
             if (err) throw err;
             let obj = JSON.parse(body);
-
-            let videoId = [];
-            for (let index = 0; index < obj.items.length; index++) {
-                videoId.push(obj.items[index].snippet.resourceId.videoId);
-            }
+            let videoId = obj.items.map(item => item.snippet.resourceId.videoId);
             const randomVideoId = videoId[Math.floor(Math.random() * videoId.length)];
             bot.sendMessage(msg.chat.id, `https://www.youtube.com/watch?v=${randomVideoId}`);
         });
